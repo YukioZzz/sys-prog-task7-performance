@@ -1,0 +1,414 @@
+{
+  "tests": [
+    {
+      "name": "build",
+      "setup": "",
+      "run": "cd tests && make cache-run -j4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": null
+    },
+    {
+      "name": "1/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "2/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "3/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "4/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "5/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "6/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 6",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "7/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 7",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "8/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 8",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "9/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 9",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "10/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 10",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "11/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 11",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "12/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 12",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "13/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 13",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "14/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 14",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "15/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 15",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "16/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 16",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "17/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 17",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "18/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 18",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "19/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 19",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "20/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 20",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "21/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 21",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "22/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 22",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "23/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 23",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "24/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 24",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "25/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 25",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "26/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 26",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "27/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 27",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "28/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 28",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "29/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 29",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "30/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 30",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "31/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 31",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "32/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 32",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "33/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 33",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "34/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 34",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "35/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 35",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "36/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 36",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "37/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 37",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "38/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 38",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "39/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 39",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "40/40",
+      "setup": "",
+      "run": "cd tests && python test.py test 40",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
