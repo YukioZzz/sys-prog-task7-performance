@@ -35,7 +35,7 @@ cache-optimized: optimized_run
 
 
 cache-run: cache-optimized
-	$(MAKE) -C .. compile
+	$(MAKE) -C .. all
 	../build/db_bench -flagfile config --num=50000 --threads=16 | tee cache-run
 
 
