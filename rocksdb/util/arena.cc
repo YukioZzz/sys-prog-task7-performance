@@ -161,7 +161,6 @@ char *Arena::AllocateFromHugePage(size_t bytes)
 char *Arena::AllocateAligned(size_t bytes, size_t huge_page_size,
 			     Logger *logger)
 {
-	size_t loop = (1 << 12) - 1;
 	assert((kAlignUnit & (kAlignUnit - 1)) ==
 	       0); // Pointer size should be a power of 2
 
@@ -189,9 +188,6 @@ char *Arena::AllocateAligned(size_t bytes, size_t huge_page_size,
 	size_t current_mod = reinterpret_cast<uintptr_t>(aligned_alloc_ptr_) &
 			     (kAlignUnit - 1);
 	size_t slop = (current_mod == 0 ? 0 : kAlignUnit - current_mod);
-	while (loop-- > 0) {
-		doNotOptimize(loop);
-	}
 	size_t needed = bytes + slop;
 	char *result;
 	if (needed <= alloc_bytes_remaining_) {

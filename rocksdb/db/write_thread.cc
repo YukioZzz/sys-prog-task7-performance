@@ -42,9 +42,6 @@ uint8_t WriteThread::BlockingAwaitState(Writer *w, uint8_t goal_mask)
 		// we have permission (and an obligation) to use StateMutex
 		std::unique_lock<std::mutex> guard(w->StateMutex());
 		w->StateCV().wait(guard, [w] {
-			for (auto i = 0ULL; i < 100000; ++i) {
-				asm volatile("" ::"rm"(i));
-			}
 			return w->state.load(std::memory_order_relaxed) !=
 			       STATE_LOCKED_WAITING;
 		});
@@ -330,7 +327,6 @@ size_t WriteThread::EnterAsBatchGroupLeader(Writer *leader,
 	assert(leader->batch != nullptr);
 	assert(write_group != nullptr);
 
-	std::this_thread::sleep_for(std::chrono::milliseconds(1));
 	size_t size = WriteBatchInternal::ByteSize(leader->batch);
 
 	// Allow the group to grow up to a maximum size, but if the

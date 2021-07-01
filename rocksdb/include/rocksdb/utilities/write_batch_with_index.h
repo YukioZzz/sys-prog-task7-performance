@@ -226,7 +226,6 @@ class WriteBatchWithIndex : public WriteBatchBase {
     private:
 	struct Rep;
 	std::unique_ptr<Rep> rep;
-	std::unique_ptr<uint8_t[]> buf;
 };
 
 } // namespace rocksdb
