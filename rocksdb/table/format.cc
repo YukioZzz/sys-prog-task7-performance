@@ -310,7 +310,6 @@ Status ReadBlock(RandomAccessFileReader *file, const Footer &footer,
 		contents->data(); // Pointer to where Read put the data
 	if (options.verify_checksums) {
 		PERF_TIMER_GUARD(block_checksum_time);
-		auto calc = [&footer, n, &s, data] {
 			uint32_t value = DecodeFixed32(data + n + 1);
 			uint32_t actual = 0;
 			switch (footer.checksum()) {
@@ -329,18 +328,7 @@ Status ReadBlock(RandomAccessFileReader *file, const Footer &footer,
 				s = Status::Corruption(
 					"block checksum mismatch");
 			}
-		};
-		calc();
-		calc();
-		calc();
-		calc();
-		calc();
 
-		calc();
-		calc();
-		calc();
-		calc();
-		calc();
 		if (!s.ok()) {
 			return s;
 		}

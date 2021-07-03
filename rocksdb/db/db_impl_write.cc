@@ -20,11 +20,6 @@ namespace rocksdb
 {
 // Convenience methods
 
-namespace
-{
-std::mutex lock_write_impl;
-}
-
 Status DBImpl::Put(const WriteOptions &o, ColumnFamilyHandle *column_family,
 		   const Slice &key, const Slice &val)
 {
@@ -451,7 +446,6 @@ Status DBImpl::PipelinedWriteImpl(const WriteOptions &write_options,
 		}
 	}
 
-	std::lock_guard<decltype(lock_write_impl)> lock_(lock_write_impl);
 	if (w.state == WriteThread::STATE_PARALLEL_MEMTABLE_WRITER) {
 		assert(w.ShouldWriteToMemtable());
 		ColumnFamilyMemTablesImpl column_family_memtables(
